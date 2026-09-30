@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang='es'>
+<head>
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <title>Registro autoridad de mesa</title>
+    <link rel='stylesheet' href='main.css'>
+</head>
+
+<body>
+  <div class="form-container">
+    <h2>Inscripción Autoridad de Mesa</h2>
+    <p > Complete el formulario para postularse como autoridad de mesa.</p>
+    <form id="registroForm">
+      
+      <!-- Distrito Electoral -->
+      <label for="distrito">Distrito Electoral</label>
+      <select id="distrito" required>
+        <option value="">Seleccione...</option>
+        <option value="Distrito 1">Distrito 1</option>
+        <option value="Distrito 2">Distrito 2</option>
+        <option value="Distrito 3">Distrito 3</option>
+      </select>
+
+      <!-- Nombre -->
+      <label for="nombre">Nombre Completo</label>
+      <input type="text" id="nombre" placeholder="Ej. Juan Pérez" required>
+
+      <!-- DNI -->
+      <label for="dni">DNI</label>
+      <input type="text" id="dni" placeholder="Ej. 12.345.678" required>
+
+      <!-- Fecha de nacimiento -->
+      <label for="fecha">Fecha de Nacimiento</label>
+      <input type="date" id="fecha" required>
+
+      <!-- Dirección -->
+      <label for="direccion">Dirección</label>
+      <input type="text" id="direccion" placeholder="Ej. Guadalajara 1234" required>
+
+      <!-- Teléfono -->
+      <label for="telefono">Teléfono</label>
+      <input type="tel" id="telefono" placeholder="Ej. +54 9 11 1234 5678" required>
+
+      <!-- Email -->
+      <label for="email">Email</label>
+      <input type="email" id="email" placeholder="Ej. juan.perez@email.com" required>
+
+      <!-- Autoridad de mesa -->
+      <label>¿Fue autoridad de mesa previamente?</label>
+      <div class="radio-group">
+        <label><input type="radio" name="autoridad" value="si" required> Sí</label>
+        <label><input type="radio" name="autoridad" value="no" required> No</label>
+      </div>
+
+      <!-- Capacitación -->
+      <label>¿Cumplió la capacitación?</label>
+      <div class="radio-group">
+        <label><input type="radio" name="capacitacion" value="si" required> Sí</label>
+        <label><input type="radio" name="capacitacion" value="no" required> No</label>
+      </div>
+
+      <!-- Afiliación -->
+      <label>¿Es afiliado en alguna agrupación?</label>
+      <div class="radio-group">
+        <label><input type="radio" name="afiliado" value="si" required> Sí</label>
+        <label><input type="radio" name="afiliado" value="no" required> No</label>
+      </div>
+
+      <!-- Partido opcional -->
+      <label for="partido">Detalle del partido (opcional)</label>
+      <input type="text" id="partido" placeholder="Ej. Partido X">
+
+      <!-- Interés en charlas -->
+      <label>¿Está interesado en participar en alguna charla?</label>
+      <div class="radio-group">
+        <label><input type="radio" name="charlaInteres" value="si" required> Sí</label>
+        <label><input type="radio" name="charlaInteres" value="no" required> No</label>
+      </div>
+
+      <!-- Selección de charlas -->
+      <label for="charlas">Seleccione charlas de orientación</label>
+      <select id="charlas" >
+        <option value="Charla 1">Charla 1 - Introducción</option>
+        <option value="Charla 2">Charla 2 - Procedimientos</option>
+        <option value="Charla 3">Charla 3 - Normativas</option>
+      </select>
+
+      <button type="submit" class="submit-btn">Postularme</button>
+    </form>
+  </div>
+
+  <script src="registro.js">   </script>
+</body>
