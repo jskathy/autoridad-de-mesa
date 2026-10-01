@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal para Autoridad de Mesa</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">Portal para autoridad de mesa</div>
+        <nav>
+            <a href="registro.html" id="PC">Postulación Ciudadana</a>
+            <a href="#charlasOrientativas">Charlas Orientativas</a>
+            <a href="#mapaDeSedes">Mapa de Sedes</a>
+        </nav>
+    </header>
+
+    <div class="big-container">
+
+        <!-- SECCIÓN PRINCIPAL: INTRODUCCIÓN -->
+        <section class="introduccion">
+            <div class="miniContainer">
+                <h5 id="EleccionesPresidenciales2026">
+                    • ELECCIONES PRESIDENCIALES 2026 · CONVOCATORIA CÍVICA OFICIAL
+                </h5>
+                <h1>
+                    Postulación Abierta de <br> Autoridades de Mesa
+                </h1>
+                <p>Sea custodio de la voluntad popular y garantice el normal desarrollo del sufragio en su mesa
+                    electoral. Los ciudadanos pueden postularse de forma voluntaria, registrar sus datos con validez
+                    jurídica y concurrir libremente a las charlas orientativas presenciales en las sedes habilitadas en
+                    la ciudad, sin requerir inscripción previa.
+                </p>
+
+                <div class="botones-container">
+                    <button class="Postular">
+                        <a href="registro.html" id="button-postulacion">Postularme como Autoridad de Mesa</a>
+                    </button>
+                    <button class="Explorar">
+                        <a href="#charlasOrientativas" id="button-postulacion">Explorar Charlas y Mapa de Sedes</a>
+                    </button>
+                </div>
+            </div>
+
+            <div class="imagenContainer">
+                <img src="assets/img/urnas.jfif" alt="urnas">
+            </div>
+        </section>
+
+        <!-- SECCIÓN CHARLAS ORIENTATIVAS -->
+        <section id="charlasOrientativas">
+            <div class="contenedorCharlas">
+
+                <!-- Tarjeta 1 -->
+                <div class="tarjeta-charla">
+                    <h2>Apertura de Mesa, Armado del Cuarto Oscuro y Control de Padrones</h2>
+                    <p class="InfoCharla">Capacitación integral sobre la llegada a las 07:30 hs, verificación de urnas
+                        inviolables, colocación de fajas de seguridad, ordenamiento y reposición de boletas en el cuarto
+                        oscuro, acreditación
+                        formal de fiscales partidarios y cotejo del padrón electoral definitivo.
+                    </p>
+                    <p class="UbicacionCharla">
+                        📍 Facultad de Derecho - UBA <br>
+                        Av. Pres. Figueroa Alcorta 2263 · Recoleta <br>
+                        Sala: Salón de Pasos Perdidos (Planta Principal) (Capacidad: 350 personas)
+                    </p>
+                    <div class="fecha-hora-box">
+                        <span class="FechaCharla">🗓️ Miércoles 14 de Octubre de 2026</span>
+                        <span class="HoraCharla">🕒 09:30 a 11:30 hs</span>
+                    </div>
+                    <div class="tarjeta-botones">
+                        <button class="btn-mapa"
+                            onclick="cambiarMapa('Av. Pres. Figueroa Alcorta 2263 Recoleta Buenos Aires')">📍 Ver sede
+                            en el mapa</button>
+                        <a href="registro.html?charla=Charla 1" class="btn-vincular">Vincular a mi postulación</a>
+                    </div>
+                </div>
+
+                <!-- Tarjeta 2 -->
+                <div class="tarjeta-charla">
+                    <h2>Accesibilidad Electoral y Cuarto Oscuro Accesible (COA)</h2>
+                    <p class="InfoCharla">Protocolos para garantizar el voto independiente de electores con discapacidad
+                        visual, motora, auditiva o personas mayores. Funcionamiento del Cuarto Oscuro Accesible (COA),
+                        plantilla guía
+                        para personas ciegas y procedimiento de voto asistido con persona de confianza.
+                    </p>
+                    <p class="UbicacionCharla">
+                        📍 Centro Cultural Recoleta <br>
+                        Junín 1930 · Recoleta <br>
+                        Sala: Auditorio El Aleph (Capacidad: 180 personas)
+                    </p>
+                    <div class="fecha-hora-box">
+                        <span class="FechaCharla">🗓️ Martes 20 de Octubre de 2026</span>
+                        <span class="HoraCharla">🕒 18:00 a 20:00 hs</span>
+                    </div>
+                    <div class="tarjeta-botones">
+                        <button class="btn-mapa" onclick="cambiarMapa('Junín 1930 Recoleta Buenos Aires')">📍 Ver sede
+                            en el mapa</button>
+                        <a href="registro.html?charla=Charla 2" class="btn-vincular">Vincular a mi postulación</a>
+                    </div>
+                </div>
+
+                <!-- Tarjeta 3 -->
+                <div class="tarjeta-charla">
+                    <h2>Claves del Escrutinio y Confección Ágil de Documentación</h2>
+                    <p class="InfoCharla">
+                        Sesión práctica diseñada para autoridades designadas en Comunas 12, 13 y 14. Demostración en
+                        vivo de distribución de mesas de conteo, verificación de pilas de votos y firma unificada con
+                        fiscales partidarios para finalizar el comicio con precisión y serenidad.
+                    </p>
+                    <p class="UbicacionCharla">
+                        📍 Sede Comunal 13 Belgrano <br>
+                        Av. Cabildo 3067 · Belgrano <br>
+                        Sala: Salón Cívico de Actos y Participación (Capacidad: 150 personas)
+                    </p>
+                    <div class="fecha-hora-box">
+                        <span class="FechaCharla">🗓️ Jueves 29 de Octubre de 2026</span>
+                        <span class="HoraCharla">🕒 18:30 a 20:30 hs</span>
+                    </div>
+                    <div class="tarjeta-botones">
+                        <button class="btn-mapa" onclick="cambiarMapa('Av. Cabildo 3067 Belgrano Buenos Aires')">📍 Ver
+                            sede en el mapa</button>
+                        <a href="registro.html?charla=Charla 3" class="btn-vincular">Vincular a mi postulación</a>
+                    </div>
+                </div>
+
+                <!-- Tarjeta 4 -->
+                <div class="tarjeta-charla">
+                    <h2>Taller Práctico de Resolución de Casos Críticos en Mesa</h2>
+                    <p class="InfoCharla">
+                        Resolución práctica con material electoral auténtico: qué hacer si falta el presidente de mesa a
+                        las 08:00 hs, faltante total o rotura de boletas en el cuarto oscuro, dudas sobre la identidad
+                        del elector, rotura involuntaria de sobre y manejo de situaciones de tensión.
+                    </p>
+                    <p class="UbicacionCharla">
+                        📍 Universidad Tecnológica Nacional (FRBA) <br>
+                        Av. Medrano 951 · Almagro <br>
+                        Sala: Aula Magna de Ingeniería (Capacidad: 200 personas)
+                    </p>
+                    <div class="fecha-hora-box">
+                        <span class="FechaCharla">🗓️ Martes 27 de Octubre de 2026</span>
+                        <span class="HoraCharla">🕒 17:30 a 20:00 hs</span>
+                    </div>
+                    <div class="tarjeta-botones">
+                        <button class="btn-mapa" onclick="cambiarMapa('Av. Medrano 951 Almagro Buenos Aires')">📍 Ver
+                            sede en el mapa</button>
+                        <a href="registro.html?charla=Charla 4" class="btn-vincular">Vincular a mi postulación</a>
+                    </div>
+                </div>
+
+                <!-- Tarjeta 5 -->
+                <div class="tarjeta-charla">
+                    <h2>Escrutinio Provisorio, Confección de Actas y Certificados Oficiales</h2>
+                    <p class="InfoCharla">
+                        Guía paso a paso para el conteo a partir de las 18:00 hs: clasificación estricta de votos
+                        afirmativos, en blanco, nulos, recurridos e impugnados. Métodos para evitar discrepancias
+                        aritméticas en el llenado del acta de escrutinio, telegrama postal y certificado de escrutinio.
+                    </p>
+                    <p class="UbicacionCharla">
+                        📍 Palacio de Tribunales - Sala Electoral <br>
+                        Talcahuano 550 · San Nicolás / Tribunales <br>
+                        Sala: Auditorio Central Dr. Cecilio Sánchez (Capacidad: 220 personas)
+                    </p>
+                    <div class="fecha-hora-box">
+                        <span class="FechaCharla">🗓️ Sábado 17 de Octubre de 2026</span>
+                        <span class="HoraCharla">🕒 14:00 a 16:30 hs</span>
+                    </div>
+                    <div class="tarjeta-botones">
+                        <button class="btn-mapa" onclick="cambiarMapa('Talcahuano 550 San Nicolás Buenos Aires')">📍 Ver
+                            sede en el mapa</button>
+                        <a href="registro.html?charla=Charla 5" class="btn-vincular">Vincular a mi postulación</a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="mapaDeSedes">
+            <h2>Mapa de Sedes Habilitadas</h2>
+            <p>Seleccione una sede en las tarjetas superiores para enfocarla automáticamente en el mapa.</p>
+            <div class="map-container">
+                <iframe id="googleMap" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"
+                    src="https://www.google.com/maps?q=Buenos+Aires&output=embed">
+                </iframe>
+            </div>
+        </section>
+    </div>
+
+    <script src="js/mapa.js"></script>
+</body>
+
+</html>

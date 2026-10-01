@@ -1,0 +1,275 @@
+html {
+  scroll-behavior: smooth;
+}
+
+/* Margen superior para compensar el header fijo al hacer scroll */
+#charlasOrientativas {
+  scroll-margin-top: 100px;
+}
+
+#mapaDeSedes {
+  scroll-margin-top: 100px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+#mapaDeSedes h2 {
+  font-size: 1.5rem;
+  color: #0f172a;
+  margin-bottom: 8px;
+}
+
+#mapaDeSedes p {
+  color: #4a5568;
+  margin-bottom: 20px;
+}
+
+/* Contenedor del Mapa */
+#map {
+  width: 100%;
+  height: 450px;
+  border-radius: 12px;
+  border: 1.5px solid #eaeaea;
+  z-index: 10;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #fbf9f5;
+  margin: 0;
+  padding-top: 90px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 70px;
+  background-color: #fbf9f5;
+  z-index: 1000;
+  border-bottom: 2px solid #eaeaea;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+header nav {
+  display: flex;
+  gap: 80px;
+  margin: 0 auto;
+}
+
+header nav a {
+  text-decoration: none;
+  color: #333;
+  font-size: 0.95rem;
+}
+
+header nav a:hover {
+  color: #007bff;
+}
+
+.big-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+
+.introduccion {
+  background-color: white;
+  width: 100%;
+  border: 1.5px solid #eaeaea;
+  border-radius: 15px;
+  padding: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+}
+
+.miniContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+#EleccionesPresidenciales2026 {
+  color: #1f5fbc;
+  margin: 0;
+}
+
+.introduccion h1 {
+  font-size: 2.5rem;
+  margin: 0;
+  line-height: 1.1;
+}
+
+.introduccion p {
+  color: #4a5568;
+  line-height: 1.5;
+  margin: 0;
+}
+
+.introduccion img {
+  width: 450px;
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.botones-container {
+  display: flex;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+.botones-container button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 20px;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  border: none;
+}
+
+.botones-container button a {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+button.Postular {
+  background-color: #0f172a;
+}
+
+button.Postular a {
+  color: #ffffff;
+}
+
+button.Postular:hover {
+  background-color: #1e293b;
+}
+
+button.Explorar {
+  background-color: #f1f5f9;
+  border: 1px solid #cbd5e1 !important;
+}
+
+button.Explorar a {
+  color: #334155;
+}
+
+button.Explorar:hover {
+  background-color: #e2e8f0;
+}
+
+/* SECCIÓN DE CHARLAS */
+#charlasOrientativas {
+  margin-top: 40px;
+}
+
+.contenedorCharlas {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: space-between;
+}
+
+.contenedorCharlas .tarjeta-charla {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  width: 48%;
+  border: 1.5px solid #eaeaea;
+  border-radius: 15px;
+  padding: 30px;
+  gap: 15px;
+  box-sizing: border-box;
+}
+
+.contenedorCharlas h2 {
+  font-size: 1.25rem;
+  margin: 0;
+  color: #0f172a;
+}
+
+.contenedorCharlas .InfoCharla {
+  color: #4a5568;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  margin: 0;
+}
+
+.contenedorCharlas .UbicacionCharla {
+  color: #334155;
+  font-size: 0.9rem;
+  margin: 0;
+  line-height: 1.4;
+}
+
+.contenedorCharlas .fecha-hora-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f1f5f9;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  padding: 12px 16px;
+  font-size: 0.9rem;
+  color: #334155;
+}
+
+.contenedorCharlas .tarjeta-botones {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: auto;
+  padding-top: 15px;
+  border-top: 1px solid #f1f5f9;
+}
+
+.btn-mapa {
+  background: none;
+  border: none;
+  padding: 0;
+  color: #1f5fbc;
+  font-size: 0.9rem;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.btn-mapa:hover {
+  text-decoration: underline;
+}
+
+.btn-vincular {
+  text-decoration: none;
+  background-color: #0f172a;
+  color: white;
+  padding: 10px 18px;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  display: inline-block;
+  text-align: center;
+}
+
+.btn-vincular:hover {
+  background-color: #1e293b;
+}

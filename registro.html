@@ -1,18 +1,19 @@
 <!DOCTYPE html>
 <html lang='es'>
+
 <head>
-    <meta charset='utf-8'>
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <title>Registro autoridad de mesa</title>
-    <link rel='stylesheet' href='main.css'>
+  <meta charset='utf-8'>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <title>Registro autoridad de mesa</title>
+  <link rel='stylesheet' href='css/registro.css'>
 </head>
 
 <body>
   <div class="form-container">
     <h2>Inscripción Autoridad de Mesa</h2>
-    <p > Complete el formulario para postularse como autoridad de mesa.</p>
+    <p> Complete el formulario para postularse como autoridad de mesa.</p>
     <form id="registroForm">
-      
+
       <!-- Distrito Electoral -->
       <label for="distrito">Distrito Electoral</label>
       <select id="distrito" required>
@@ -80,15 +81,19 @@
 
       <!-- Selección de charlas -->
       <label for="charlas">Seleccione charlas de orientación</label>
-      <select id="charlas" >
-        <option value="Charla 1">Charla 1 - Introducción</option>
-        <option value="Charla 2">Charla 2 - Procedimientos</option>
-        <option value="Charla 3">Charla 3 - Normativas</option>
+      <select id="charlas">
+        <option value="Charla 1">Charla 1 - Apertura de Mesa</option>
+        <option value="Charla 2">Charla 2 - Accesibilidad Electoral</option>
+        <option value="Charla 3">Charla 3 - Claves del Escrutinio</option>
+        <option value="Charla 4">Charla 4 - Resolución de Casos Críticos</option>
+        <option value="Charla 5">Charla 5 - Escrutinio Provisorio</option>
       </select>
 
       <button type="submit" class="submit-btn">Postularme</button>
     </form>
   </div>
 
-  <script src="registro.js">   </script>
+  <script src="js/registro.js"></script>
 </body>
+
+</html>
