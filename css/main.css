@@ -51,27 +51,36 @@ header {
   top: 0;
   left: 0;
   width: 100%;
-  height: 70px;
+  height: 58px;
   background-color: #fbf9f5;
   z-index: 1000;
   border-bottom: 2px solid #eaeaea;
-  display: flex;
-  justify-content: space-between;
+  display:inline-flex;
+  justify-content:flex-start;
   align-items: center;
   padding: 0 20px;
   font-family: Georgia, "Times New Roman", Times, serif;
 }
 
+.logo{
+  width: 20%;
+  color:cadetblue;
+
+
+}
 header nav {
-  display: flex;
-  gap: 80px;
-  margin: 0 auto;
+  width: 80%;
+  display:flex;
+  margin: 0;
+
 }
 
 header nav a {
   text-decoration: none;
   color: #333;
   font-size: 0.95rem;
+  padding: 10px
+  ;
 }
 
 header nav a:hover {
@@ -183,17 +192,48 @@ button.Explorar:hover {
 }
 
 .contenedorCharlas {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
   gap: 30px;
   justify-content: space-between;
 }
+@media (max-width: 426px){
+  .contenedorCharlas { grid-template-columns: 1fr;
+ 
+}
+   header{
+  position:fixed;
+  display:flex;
+  font-size: 10px;
+  align-items:center;
+  nav{
+    column-gap: 2px;
+    height:auto;
+    a{
+    padding: 2px;
+    font-size:12px;
+    }
+  }
+}
+.introduccion {
+ display:grid;
+ height: auto;
+ h1 {
+  font-size: 1rem;
+}
+img{
 
+  width: 90%;
+  height: auto;
+}
+
+}
+}
 .contenedorCharlas .tarjeta-charla {
   display: flex;
   flex-direction: column;
   background-color: white;
-  width: 48%;
+  width: 100%;
   border: 1.5px solid #eaeaea;
   border-radius: 15px;
   padding: 30px;
